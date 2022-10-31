@@ -1,0 +1,79 @@
+.homeBackground {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+
+  height: 100vh;
+  width: 100vw;
+  background: #5965e0 url("/background.svg") no-repeat center left;
+  background-size: 770px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 4rem;
+}
+
+.container img {
+  width: 22.5;
+  height: 4.75rem;
+}
+
+.container h1 {
+  color: var(--white);
+  margin-top: 5rem;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginType {
+  margin: 2rem 0;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.loginType img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.loginType h3 {
+  color: #b2b9ff;
+}
+
+.loginContainer button {
+  height: 5rem;
+  width: 100%;
+  border: none;
+  background: linear-gradient(90deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px;
+  color: #b2b9ff;
+  transition: 0.2s;
+}
+
+.loginContainer button:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .loginContainer button {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .loginType {
+    display: flex;
+    justify-content: center;
+  }
+}

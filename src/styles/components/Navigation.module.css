@@ -1,0 +1,64 @@
+.navigationContainer {
+    position: fixed;
+    height: 100vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    z-index: 1;
+}
+
+.navigationConst {
+    height: 100%;
+    padding: 2rem;
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.navigationConst img {
+    width: 3rem;
+    height: 2.6rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 2rem;
+}
+
+.navbar svg {
+    padding:2px;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.navbar svg:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.navigationConst > button {
+    background: var(--red);
+    border: 0px;
+    color: var(--white);
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.navigationContainer > button {
+    margin: 2rem;
+    border: 0;
+    padding: 3px;
+    line-height: 0;
+    background: rgb(89, 101, 224);
+    border-radius: 4px;
+    color: var(--white);
+}
