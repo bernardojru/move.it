@@ -15,9 +15,9 @@ export default function Navigation() {
         <div className={styles.navigationConst}>
           <img src="/iconMoveIt.svg" alt="" />
           <div className={styles.navbar}>
-            <House size={30} />
-            <Trophy size={30} />
-            <User size={30} />
+            <House size={40} />
+            <Trophy size={40} />
+            <User size={40} />
           </div>
           <button>Sair</button>
         </div>

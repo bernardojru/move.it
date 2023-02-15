@@ -1,4 +1,5 @@
 import styles from "../styles/pages/home.module.css";
+import { signIn, useSession, signOut } from "next-auth/react";
 
 import Head from "next/head";
 
@@ -19,7 +20,7 @@ export default function Home() {
                 Faça login com seu Github <br /> para começar
               </h3>
             </div>
-            <button>Entrar com Github</button>
+            <button onClick={() => signIn("github")}>Entrar com Github</button>
           </div>
         </div>
       </div>
